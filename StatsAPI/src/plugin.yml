@@ -1,0 +1,4 @@
+name: StatsAPI
+version: 1.0.1
+author: SinixSpielt
+main: de.sinixspielt.statsapi.StatsAPI
