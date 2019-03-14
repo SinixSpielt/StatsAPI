@@ -132,11 +132,11 @@ public class PlayerStats extends DatabaseUpdate {
 	}
 	
 	public void addOpenChests(int chests) {
-		this.openchests = this.wins+chests;
+		this.openchests = this.openchests+chests;
 	}
 	
 	public void addBrokenblocks(int blocks) {
-		this.brokenblocks = this.wins+blocks;
+		this.brokenblocks = this.brokenblocks+blocks;
 	}
 	
 	public void addPlacedblocks(int blocks) {
@@ -242,6 +242,9 @@ public class PlayerStats extends DatabaseUpdate {
 				this.deaths = rs.getInt("Deaths");
 				this.wins = rs.getInt("Wins");
 				this.games = rs.getInt("Games");
+				this.openchests = rs.getInt("Openchests");
+				this.brokenblocks = rs.getInt("Brokenblocks");
+				this.placedblocks = rs.getInt("Placedblocks");
 				this.playtime = rs.getLong("Playtime");
 			}
 			
